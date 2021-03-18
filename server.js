@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-const express = require('express');
+const express = require("express");
 
 const PORT = 3000;
-const HOST = '0.0.0.0';
+const HOST = "0.0.0.0";
 
 // App
 const app = express();
-app.get('/', (req, res) => {
-  res.send('Hello docker World\n');
+app.get("/", (req, res) => {
+  res.send("Hello docker World\n");
 });
 
 app.listen(PORT, HOST);
